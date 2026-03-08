@@ -45,6 +45,8 @@ class Inbox < ApplicationRecord
   include OutOfOffisable
   include AccountCacheRevalidator
   include InboxAgentAvailability
+  include KanbanInbox # Custom: Kanban board support
+  include TemplateVisibilityAssignable # Custom: WhatsApp template visibility
 
   # Not allowing characters:
   validates :name, presence: true

@@ -268,6 +268,9 @@ Rails.application.routes.draw do
             resource :assignment_policy, only: [:show, :create, :destroy], module: :inboxes
           end
 
+          # Custom: Vertente customizations (Kanban + WhatsApp Templates)
+          draw :custom
+
           namespace :twitter do
             resource :authorization, only: [:create]
           end

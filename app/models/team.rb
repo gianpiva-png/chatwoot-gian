@@ -17,6 +17,7 @@
 #
 class Team < ApplicationRecord
   include AccountCacheRevalidator
+  include TemplateVisibilityAssignable # Custom: WhatsApp template visibility
 
   belongs_to :account
   has_many :team_members, dependent: :destroy_async

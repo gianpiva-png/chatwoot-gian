@@ -58,6 +58,8 @@ import copilotMessages from './captain/copilotMessages';
 import captainScenarios from './captain/scenarios';
 import captainTools from './captain/tools';
 import captainCustomTools from './captain/customTools';
+import whatsappTemplates from './modules/whatsappTemplates';
+import kanban from './modules/kanban';
 
 const plugins = [];
 
@@ -121,6 +123,8 @@ export default createStore({
     captainScenarios,
     captainTools,
     captainCustomTools,
+    whatsappTemplates,
+    kanban,
   },
   plugins,
 });

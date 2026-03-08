@@ -46,6 +46,7 @@ class Api::V1::Accounts::InboxesController < Api::V1::Accounts::BaseController
     inbox_params = permitted_params.except(:channel, :csat_config)
     inbox_params[:csat_config] = format_csat_config(permitted_params[:csat_config]) if permitted_params[:csat_config].present?
     @inbox.update!(inbox_params)
+    @inbox.setup_default_kanban_stages! if @inbox.saved_change_to_attribute?(:kanban_enabled) && @inbox.kanban_enabled? # Custom: Kanban
     update_inbox_working_hours
     update_channel if channel_update_required?
   end
@@ -174,6 +175,7 @@ class Api::V1::Accounts::InboxesController < Api::V1::Accounts::BaseController
     [:name, :avatar, :greeting_enabled, :greeting_message, :enable_email_collect, :csat_survey_enabled,
      :enable_auto_assignment, :working_hours_enabled, :out_of_office_message, :timezone, :allow_messages_after_resolved,
      :lock_to_single_conversation, :portal_id, :sender_name_type, :business_name,
+     :kanban_enabled, # Custom: Kanban
      { csat_config: [:display_type, :message, :button_text, :language,
                      { survey_rules: [:operator, { values: [] }],
                        template: [:name, :template_id, :friendly_name, :content_sid, :approval_sid, :created_at, :language, :status] }] }]

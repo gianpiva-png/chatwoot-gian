@@ -701,6 +701,12 @@ const menuItems = computed(() => {
           to: accountScopedRoute('sla_list'),
         },
         {
+          name: 'Settings WhatsApp Templates',
+          label: t('SIDEBAR.WHATSAPP_TEMPLATES'),
+          icon: 'i-lucide-message-square-text',
+          to: accountScopedRoute('whatsapp_templates_list'),
+        },
+        {
           name: 'Conversation Workflow',
           label: t('SIDEBAR.CONVERSATION_WORKFLOW'),
           icon: 'i-lucide-workflow',

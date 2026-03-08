@@ -1,0 +1,36 @@
+{
+  "KANBAN": {
+    "TITLE": "Kanban Board",
+    "LOADING": "Loading board...",
+    "NO_STAGES": "No kanban stages configured. Click 'Manage Stages' to create columns.",
+    "MANAGE_STAGES": "Manage Stages",
+    "LOAD_MORE": "Load more",
+    "MOVE_ERROR": "Failed to move conversation. Please try again.",
+    "ENABLE": "Enable Kanban Board",
+    "ENABLE_DESCRIPTION": "Transform conversations into tickets on a visual Kanban board",
+    "CARD": {
+      "UNKNOWN": "Unknown Contact",
+      "UNASSIGNED": "Unassigned",
+      "NO_CONVERSATIONS": "No conversations"
+    },
+    "FILTERS": {
+      "ALL_AGENTS": "All Agents",
+      "ALL_TEAMS": "All Teams",
+      "ALL_PRIORITIES": "All Priorities"
+    },
+    "STAGES": {
+      "TITLE": "Manage Kanban Stages",
+      "DESCRIPTION": "Add, edit, reorder or remove stages for this inbox's kanban board.",
+      "NAME": "Stage name",
+      "DEFAULT": "Default",
+      "CLOSED": "Done",
+      "ADD": "Add",
+      "ADD_PLACEHOLDER": "New stage name...",
+      "CANCEL": "Cancel",
+      "SAVE": "Save Stages",
+      "SAVE_SUCCESS": "Stages updated successfully",
+      "SAVE_ERROR": "Failed to save stages. Please try again.",
+      "CANNOT_DELETE_DEFAULT": "Cannot delete the default stage"
+    }
+  }
+}

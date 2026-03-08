@@ -1,5 +1,52 @@
 {
   "WHATSAPP_TEMPLATES": {
+    "HEADER": "WhatsApp Templates",
+    "DESCRIPTION": "Manage WhatsApp message templates visibility by inbox and team",
+    "SEARCH_PLACEHOLDER": "Search templates by name...",
+    "LOADING": "Loading templates...",
+    "NO_RECORDS": "No WhatsApp templates found",
+    "NO_RESULTS": "No templates match your search",
+    "TEMPLATES_COUNT": "templates",
+    "ALL_STATUSES": "All Statuses",
+    "SYNC_ALL": "Sync All",
+    "SYNC_SUCCESS": "Template sync initiated. Updates may take a few minutes.",
+    "SYNC_ERROR": "Failed to sync templates. Please try again.",
+    "VIEW_DETAILS": "View Details",
+    "MANAGE_VISIBILITY": "Manage Visibility",
+    "BACK_TO_LIST": "Back to list",
+    "TABLE": {
+      "NAME": "Name",
+      "INBOX": "Inbox / Phone",
+      "STATUS": "Status",
+      "LANGUAGE": "Language",
+      "VISIBILITY": "Visibility",
+      "ACTIONS": "Actions"
+    },
+    "DETAILS": {
+      "TITLE": "Template Details",
+      "SUBTITLE": "View template components and manage visibility",
+      "NOT_FOUND": "Template not found",
+      "COMPONENTS": "Components",
+      "HEADER": "Header",
+      "BODY": "Body",
+      "FOOTER": "Footer",
+      "BUTTONS": "Buttons",
+      "MEDIA_TYPE": "media"
+    },
+    "VISIBILITY": {
+      "TITLE": "Manage Template Visibility",
+      "DESCRIPTION": "Select which inboxes and teams can see and use template: ",
+      "ALL_VISIBLE": "Visible to all (no restrictions)",
+      "ALL_VISIBLE_INFO": "When no inboxes or teams are selected, this template is visible to everyone.",
+      "ASSIGNED": "assigned",
+      "INBOXES": "WhatsApp Inboxes",
+      "TEAMS": "Teams",
+      "NO_WHATSAPP_INBOXES": "No WhatsApp inboxes found",
+      "NO_TEAMS": "No teams found",
+      "SAVE": "Save Visibility",
+      "CANCEL": "Cancel",
+      "SAVE_SUCCESS": "Visibility updated successfully"
+    },
     "MODAL": {
       "TITLE": "Whatsapp Templates",
       "SUBTITLE": "Select the whatsapp template you want to send",
